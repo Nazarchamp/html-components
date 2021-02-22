@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1.0" user-scalable="yes">
+    </head>
+    <body>
+        <form method="GET">
+            <label for="address">Address:</label>
+            <input type="text" id="address" placeholder="100 Innovation Drive" name="address" size='30' maxlength="30">
+            <br>
+            <br>
+            <label for="City">City:</label>
+            <input type="text" id="city" placeholder="Winnipeg" name="city" size='10' maxlength="10"> 
+            <br>
+            <br>
+            <label for="Postal">Postal:</label>
+            <input type="text"id="postal"placeholder="R3T 6A8" name="postal" size='7' maxlength="7">  
+            
+            <p>Select a shipping method:</p>
+            <select name="shipping" id="shipping">
+                <option value="standard">Standard</option>
+                <option value="one_day">One Day</option>
+                <option value="two_day">Two Day</option>
+            </select>
+
+            <p>Select a payment method:</p>
+            <label><input type="radio" name="payment_method" value="is_paypal" checked="True">PayPal</label>
+            <label><input type="radio" name="payment_method" value="is_debit">Debit Card</label>
+            <label><input type="radio" name="payment_method" value="is_credit">Credit Card</label>
+            
+            <br><br>
+
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="4" cols="40"></textarea>
+
+            <br><br>
+
+            <label><input type="checkbox" name="email_updates" checked="True">Sign Me Up For Email Updates</label>
+            <br><br>
+            <label><input type="checkbox" name="email_updates" checked="True">Save My Payment Information</label>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
