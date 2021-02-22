@@ -7,40 +7,48 @@
     </head>
     <body>
         <form method="GET">
-            <label for="address">Address:</label>
+            <!--Text inpts for Address, City, and Postal Code, with a label binded to the id of the form, and appropriate restrictions-->
+            <label for="address"><b><i>Address:</i></b></label>
             <input type="text" id="address" placeholder="100 Innovation Drive" name="address" size='30' maxlength="30">
             <br>
             <br>
-            <label for="City">City:</label>
+            <label for="City"><b><i>City:</i></b></label>
             <input type="text" id="city" placeholder="Winnipeg" name="city" size='10' maxlength="10"> 
             <br>
             <br>
-            <label for="Postal">Postal:</label>
+            <label for="Postal"><b><i>Postal:</i></b></label>
             <input type="text"id="postal"placeholder="R3T 6A8" name="postal" size='7' maxlength="7">  
             
-            <p>Select a shipping method:</p>
+            <!--Dropdown selection for shipping method-->
+            <p><u>Select a shipping method:</u></p>
             <select name="shipping" id="shipping">
                 <option value="standard">Standard</option>
                 <option value="one_day">One Day</option>
                 <option value="two_day">Two Day</option>
             </select>
-
-            <p>Select a payment method:</p>
+            
+            <!--Radio buttons for determining payment method, all in same group: payment_method-->
+            <p><u>Select a payment method:</u></p>
             <label><input type="radio" name="payment_method" value="is_paypal" checked="True">PayPal</label>
             <label><input type="radio" name="payment_method" value="is_debit">Debit Card</label>
             <label><input type="radio" name="payment_method" value="is_credit">Credit Card</label>
             
             <br><br>
-
-            <label for="comments">Comments:</label>
+            
+            <!--4x40 Text area for comments-->
+            <label for="comments"><u>Comments:</u></label>
             <textarea id="comments" name="comments" rows="4" cols="40"></textarea>
 
             <br><br>
 
-            <label><input type="checkbox" name="email_updates" checked="True">Sign Me Up For Email Updates</label>
+            <!--Check boxes for payment saving and email updates-->
+            <label><input type="checkbox" name="email_updates" checked="True"><i>Sign Me Up For Email Updates</i></label>
             <br><br>
-            <label><input type="checkbox" name="email_updates" checked="True">Save My Payment Information</label>
+            <label><input type="checkbox" name="save_payment" checked="True"><i>Save My Payment Information</i></label>
+
             <br><br>
+
+            <!--Submit button-->
             <input type="submit" value="Submit">
         </form>
     </body>
